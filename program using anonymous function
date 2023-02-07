@@ -1,0 +1,20 @@
+// 1. Print odd number
+-------------------------
+const readline = require("readline");
+
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+  userInput.push(data);
+});
+
+inp.on("close", () => {
+const numbers = [8, 12, 5, 2, 4, 9, 1];
+const odds = numbers.filter((num) => num % 2 === 1);
+console.log(odds);
+
+});
